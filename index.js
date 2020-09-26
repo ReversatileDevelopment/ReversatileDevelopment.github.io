@@ -14,12 +14,13 @@ http.createServer((req, res) => {
 	if (urlObj.query.code) {
 		const accessCode = urlObj.query.code;
 		const data = {
-			client_id: 'your client id',
-			client_secret: 'your client secret',
+			
+			client_id: '637257489926324235',
+			client_secret: 'A5YVbqHY8R7KoquKYDgY3o1K-Ey7wVOM',
 			grant_type: 'authorization_code',
-			redirect_uri: 'your redirect uri',
+			redirect_uri: 'https://reversatiledevelopment.github.io/',
 			code: accessCode,
-			scope: 'the scopes',
+			scope: 'identify',
 		};
 
 		fetch('https://discordapp.com/api/oauth2/token', {
